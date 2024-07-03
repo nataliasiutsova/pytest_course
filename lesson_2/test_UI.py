@@ -47,7 +47,7 @@ class TestLogin:
     ("//a[contains(@href,'time')]", "time/viewEmployeeTimesheet"),
   
   ])
-  def test_link_navigation(self,link,url,login):
+  def test_link_navigation(self,link,url):
   
     self.driver.find_element('xpath',"//input[@name='username']").send_keys(os.getenv("LOGIN"))
     self.driver.find_element('xpath',"//input[@name='password']").send_keys(os.getenv("PASSWORD"))
